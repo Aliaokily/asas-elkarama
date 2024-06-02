@@ -1,0 +1,238 @@
+/* Start Global Settings */
+
+:root {
+	--first-color: #0f5145;
+	--sec-color: #ffe285;
+	--white: #eeeeee;
+	--black: #252525;
+	--bg-color: #e2e2e2;
+	--font-main: "Cairo", sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+*,
+body {
+	padding-right: 0px;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: var(--font-main);
+	direction: rtl;
+	overflow-x: hidden;
+	background-color: var(--white);
+
+}
+
+body::-webkit-scrollbar,
+.mainbg::-webkit-scrollbar {
+	background-color: var(--sec-color);
+	width: 10px;
+}
+
+body::-webkit-scrollbar-thumb,
+.mainbg::-webkit-scrollbar-thumb {
+	background: var(--first-color);
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+/* End Global Settings */
+/* start header */
+
+header {
+	width: 100%;
+	height: 85px;
+	background-image: url(../Images/header_bg.jpg);
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+}
+header img{
+	height: 84px;
+	width: 232px;
+	padding: 32px;
+	padding-top: 18px;
+	padding-bottom: 17px;
+	float: right;
+	}
+
+.header-social-links {
+	padding: 16px 53px;
+}
+.header-social-links a {
+	color: var(--first-color);
+	opacity: 0.7;
+	padding-left: 23px;
+	float: left;
+	width: 45px;
+}
+header nav {
+	position: absolute;
+	top: 36px;
+	height: 68px;
+	line-height: 60px;
+	width: 100%;
+	background-color: #165448;
+	/* margin-bottom: 44px; */
+}
+header ul {
+	display: flex;
+	width: 60%;
+	justify-content: space-around;
+	flex-direction: row;
+	margin: auto;
+	color: #e6e6e6;
+
+}
+header ul li .title-h1 {
+	color: #e6e6e6;
+	padding: 0.5em;
+	margin: 0 0.5em;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+/*  */
+header ul li a {
+	font-size: 14px;
+	font-weight: 800;
+	display: inline-block;
+	color: #eee !important;
+	margin-left: 15px;
+}
+
+header ul li a.active,
+header ul li a:hover {
+	transition: 0.5s ease-in-out;
+	color: var(--sec-color) !important;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-ms-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+
+}
+
+.navbar-toggler {
+	font-size: 2rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+	outline: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+.navbar-toggler svg {
+	color: var(--sec-color);
+}
+
+.navbar-toggler svg:focus {
+	outline: none !important;
+}
+
+.navbar-collapse.collapse.show,
+.navbar-collapse.collapsing {
+	background-color: var(--first-color);
+	margin-top: -50px;
+	position: relative;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	padding: 15px 20px;
+}
+
+/* start footer */
+.footer{
+	background-image: url(../images/footer_bg.jpg);
+	margin: 0;
+}
+.top_footer{
+	background-image: linear-gradient(180deg,var(--first-color), transparent 50%,var(--first-color));
+	color: var(--sec-color);
+	font-weight: bold;
+	background-size: cover;
+	padding-bottom: 2em;
+	font-size: 0.9em;
+}
+.top_footer h4{
+	color: var(--sev-color);
+	padding: 1.5em 0 0.5em;
+	font-weight: bold;
+}
+.top_footer .f_menu{
+	padding-right: 20px;
+}
+.top_footer ul{
+	list-style: none;
+	padding-right: 20px;
+}
+.top_footer .contact,
+.about_us .contact{
+	padding: 0;
+	list-style: none
+}
+.top_footer .contact li,
+.about_us .contact li{
+	padding-bottom: 10px;
+}
+.top_footer .contact i,
+.about_us .contact i{
+	width: 17px;
+	color: var(--sec-color);
+	font-weight: bold;
+}
+.top_footer a{
+	color: var(--sec-color);
+	font-weight: bold;
+}
+.top_footer a:hover{
+	color: var(--first-color);
+}
+.top_footer .logo_footer{
+	display: block;
+	padding-top: 6em;
+	text-decoration:none;
+}
+.top_footer .logo_footer img{
+	width: 100%;
+	max-width: 188px;
+}
+.top_footer .row {display: flex;justify-content: space-around;}
+.bottom_footer{
+	background-color: #165448;
+	padding: 15px 0;
+	color: #fff;
+	text-align: center;
+}
+.bottom_footer p{
+	margin: 0;
+	direction: ltr;
+}
+.bottom_footer a{
+	color: var(--sec-color);
+	
+}
+/* end footer */

@@ -1,0 +1,228 @@
+/* start overview */
+main{
+	margin-top: 134px;
+}
+#overview {
+	/* min-height: 100vh; */
+	background-image: url("../images/overview.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+#overview .overlay {
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(180deg, var(--first-color), transparent 50%, #ece7e3);
+}
+#overview .overlay h1 {font-size: 70px;}
+#overview .overlay p {font-size: 32px;color: var(--first-color);}
+.all{
+	padding: 180px;
+	font-weight: bolder;
+	}
+
+/* end overview */
+/* start goals */
+.goals {
+	padding: 29px 0;
+	margin-top: 0 !important;
+	background-image: url(../images/goals_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	}
+.goals img {
+	width: 100%;
+	position: relative;
+	right: 0px;
+	z-index: 0;
+}
+.maintitle {
+	color: var(--first-color);
+	font-size: 40px;
+	font-weight: bold;
+	width: fit-content;
+	margin: 20px auto;
+	border-bottom: 5px solid var(--sec-color);
+	padding-bottom: 20px;
+}
+  /* end goals */
+/* start projects */
+.projects{
+	background-image: url(../images/projects_bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 400px;
+	padding: 2em 0 6em;
+}
+.projects h2 {color: var(--sec-color);
+font-size: 40px;
+font-weight: bold;
+width: fit-content;
+margin: 20px auto;
+border-bottom: 5px solid var(--first-color);
+padding-bottom: 20px;
+}
+.projects .card{
+	background-color: var(--sec-color);
+}
+.projects .card-body>h4{
+	color: var(--first-color);
+	font-weight: bold;
+	padding-bottom: 15px;
+	font-size: 1.3em;
+	height: 80px;
+}
+.projects .card-body>a{
+	background-color: var(--first-color);
+	color: var(--sec-color);
+    font-weight: bold;
+    border: none;
+	padding:5px 30px;
+	transition: all 0.5s;
+	border: 2px solid var(--first-color)
+}
+.projects .card-body>a:hover,
+.projects .card-body>a:focus,
+.projects .card-body>a:active,
+.projects .card-body>a:active:focus,
+.projects .card-body>a:active{
+	background-color: transparent;
+	color: var(--first-color);
+	box-shadow: none !important;
+	border-color: var(--first-color) !important;
+}
+/* end projects */
+/* start services */
+.services {
+	
+	padding: 0px 0;
+	margin-top: 0 !important;
+	background-image: url(../images/sevices_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	}
+.services img {
+	width: 100%;
+	position: relative;
+	right: 0;
+	z-index: 0;
+}
+
+.services ul li{
+	font-size: 28px;
+	list-style: disc;
+	padding-top: 10px;
+	color: var(--first-color);
+}
+/* end services */
+	@media (max-width: 1200px) {
+		.all {
+			padding: 77px;
+		}
+		#overview .overlay h1 {
+			font-size: 71px;
+		}
+		#overview .overlay p {
+			font-size: 25px;
+			}
+		.goals img {
+				width: 100%;
+				top: 166px;
+				right: 50px;
+				}
+		.container{
+					width: 100%;
+					margin-right: auto;
+					margin-left: auto;
+				}
+		.projects .card-body>h4 {
+					height: 100px;
+				}
+	}
+	@media (max-width: 1170px) {
+		.projects .card-body>h4 {
+			height: 129px;
+		}
+	}
+	@media (max-width: 1024px){
+		
+	}
+	@media (max-width: 994px){
+		header img {
+			height: 82px;
+			width: 231px;
+			padding: 30px;
+			padding-top: 10px;
+            padding-bottom: 22px;
+			}
+		.header-social-links a 
+			{/* padding-left: 27px; */width: 55px;}
+		.svg-inline--fa {
+				height: 1.5em;}
+				header ul li .title-h1 {
+					font-size: 17px;
+					}
+		#overview .overlay h1 {
+			font-size: 65px;
+		}
+		#overview .overlay p {
+			font-size: 30px;
+			}
+		.maintitle {
+				font-size: 60px;}
+		p{font-size: 26px;display: flex;}
+		.order-md-1 {
+					width: 100%;
+					}
+		.order-md-2 {display: none;}
+	}
+	@media (max-width: 767px) {
+		header img {
+			height: 92px;
+			width: 241px;
+			}
+		.header-social-links a 
+			{/* padding-left: 27px; */width: 55px;}
+			p{font-size: 99px;display: block;}
+			.order-md-1 {
+						width: 80%}
+			.order-md-2 {display: none;}
+			#overview .overlay h1 {
+				font-size: 85px;
+			}
+			#overview .overlay p {
+				font-size: 50px;
+				}
+				
+		}
+	@media (max-width: 340px) {
+		.all {height: 100vh;}
+			p{font-size: 80px}
+			.order-md-1 {
+						width: 85%}
+			.order-md-2 {display: none;}
+			#overview .overlay h1 {
+				font-size: 75px;
+			}
+			#overview .overlay p {
+				font-size: 40px;
+				}
+				
+		}
+		@media (min-width:320px)and (max-width: 480px){
+			.all {height: 100vh;}
+			p{font-size: 80px}
+			.order-md-1 {
+						width: 85%}
+			.order-md-2 {display: none;}
+			#overview .overlay h1 {
+				font-size: 75px;
+			}
+			#overview .overlay p {
+				font-size: 40px;
+				}
+				
+		}
+			
+	
+	
